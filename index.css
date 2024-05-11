@@ -1,0 +1,383 @@
+/* 1)Estilos generales:resetear margin y padding ya que los navegadores pueden
+tener distintos por defecto y genera inconsistencias.
+   2)box-sizing: border-box; simplifica el maquetado considerando las dimensiones
+   de los elementos desde su borde.
+
+   *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family //opcional poner aca
+   }
+
+   Navbar - resetear el estilo de la ul para que no se vean las viñetas con
+            list-style=none;
+   Eliminar estilo de enlaces con 
+   
+   a{
+    text-decoration:none;
+   }
+
+   
+Siempre colocar hover y active juntos, ya que en los celulares 
+el hover no tiene efecto dado que no hay cursor, pero si el active 
+al presionar sobre un elemento. */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@font-face {
+    font-family: "Brittany";
+    src: url(./BrittanySignature.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+body{
+    background-color: #b9c3ca73;
+    color: #504e54;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}      
+
+.banner{
+    display: flex;
+    background-color: black;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 15px;
+}
+
+.banner .contenedorWhatsapp{
+    position: fixed;
+    top: 1vh;
+    right: 4vw;
+    z-index: 3;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+    .banner .fa-brands.fa-whatsapp{
+        color:white;
+        font-size: 3em;
+        transition:all 0.1s;
+    }
+
+    .banner .fa-brands.fa-whatsapp:hover{
+        transform:scale(1.2)
+    }
+    .banner .fa-brands.fa-whatsapp:active{
+        transform:scale(1.2)
+    }
+
+    .banner p {
+        color: white;
+        font-size: 0.8em;
+        margin: 0;
+        padding: 5px;
+        width:80vw;
+        
+    }
+
+    .banner .contenedorWhatsapp a{
+        text-decoration: none;
+    }
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    border-top: 7px solid #8b7d76;
+}
+
+    .contenedorTitulo{
+        position:relative;
+        z-index: 2;
+        border-radius: 70px 13px;
+        padding: 30px;
+        position:absolute;
+        background-color: #e9dabaa6;
+        left: 32vw;
+        top: 2vh;
+    }
+
+        .contenedorTitulo h1{
+            color: rgb(11 11 12);
+            font-family: "Brittany", serif;
+            font-size: 2.5em;
+        }
+        .contenedorTitulo p {
+            font-size: 1.2em;
+            font-variant: all-small-caps;
+            padding-left: 22px;
+            margin-top: -7px;
+        }
+
+    .navBar{
+        position: absolute;
+        top:1vh;
+        width: 100%;       
+    }
+
+    #hamburguesa{
+        font-size: 2em;
+        padding:10px;
+        transition:all 0.2s;
+    }
+    #hamburguesa:hover{
+        transform:scale(1.2);
+        color:#343336;
+    }
+    #hamburguesa:active{
+        transform:scale(1.2);
+        color:#343336;
+    }
+
+    .navBar ul{
+        list-style: none;
+        padding:10px 0;
+    }
+
+    #cruz{
+        display:none;
+    }
+
+    .navBar .navLinks{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .navBar .navLinks li{
+        transition:all 0.2s
+    }
+    .navBar .navLinks li:hover{
+        transform:scale(1.2);
+        color:#343336;
+    }
+    .navBar .navLinks li:active{
+        transform:scale(1.2);
+        color:#343336;
+    }
+
+    .navBar ul a{
+        color: #504e54;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .navBar ul li{
+        padding:10px;
+    }
+
+    .contenedorLupaCarrito{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #busqueda{
+        border: none;
+        border-radius: 4px;
+        margin-left:5px;
+        padding: 7px;
+        
+    }
+
+    .contenedorPortada img{
+        object-fit: cover;
+        width:100%;
+    }
+
+    #barraOcultar{
+        background-color: #eaebef;
+        display: none;
+    }
+
+main{
+    padding: 15px;
+}
+    
+.contenedorFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #504e54;
+    padding:20px 0;
+}
+
+
+.contenedorIconosWhatsapp{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorFooter .contenedorWhatsapp {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 20px;
+    transition:all 0.1s;
+}
+
+.contenedorFooter .contenedorWhatsapp:hover {
+    transform:scale(1.2);
+    color:#343336;
+}
+.contenedorFooter .contenedorWhatsapp:active {
+    transform:scale(1.2);
+    color:#343336;
+}
+
+
+
+.contenedorFooter .contenedorWhatsapp a{
+    color:#504e54;
+    display:flex;
+    text-decoration: none;
+    text-decoration: none;
+}
+
+.contenedorFooter .contenedorWhatsapp a i{
+    font-size: 2em;   
+    padding: 5px;
+}
+.contenedorFooter .contenedorWhatsapp p{
+    font-size: 1em;
+    margin-bottom: 0;
+    position:relative;
+    top:11px;
+}
+
+.contenedorFooter .contenedorIconos a{
+ padding:0 5px;
+}
+
+.contenedorIconos i{
+    color:#504e54;
+    font-size: 1.5em;
+    transition: all 0.1s;
+}
+
+.contenedorIconos i:hover{
+    transform:scale(1.2);
+    color:#343336;
+}
+.contenedorIconos i:active{
+    transform:scale(1.2);
+    color:#343336;
+}
+
+
+/*Media Queries*/
+
+@media screen and (max-width:450px){
+   
+    .contenedorTitulo h1 {
+        font-size: 1.7em;
+    }
+    .contenedorTitulo p{
+        font-size:0.6em;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .banner{
+        padding: 0 10%;
+    }
+    .banner .contenedorWhatsapp{
+        top: 8vh;
+        right: 12vw;
+    }
+    .contenedorTitulo{
+        border-radius: 0;
+        padding: 5px;
+        position: initial;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    .contenedorTitulo h1{
+        font-size: 3em;
+    }
+
+    #navBar {
+        padding: 0 5%;
+        position: relative;
+        top: 0vh;
+        width: 100%;
+    }
+
+    .navBar .navList{
+        justify-content: space-between;
+        width:100%;
+    }
+
+    .navBar .navLinks{
+        display:flex;
+        flex-direction: row;
+    }
+
+    #barraOcultar{
+        background-color: #eaebef00;
+        display: flex;
+        padding:0;
+    }
+
+    #cruz, #hamburguesa{
+        display:none;
+    }
+
+    #busqueda{
+        width:14vw;
+    }
+
+
+    .contenedorIconosWhatsapp{
+        display:flex;
+        flex-direction:row;
+        align-items: center;
+    }
+   
+
+    .navList{
+        display:flex;
+        align-items: center;
+    }
+
+    .contenedorPortada, main{
+        margin: auto;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+
+    #navBar{
+        background-color: #eaebef99;
+    }
+    
+    .contenedorTitulo p {
+        margin-top: -24px;
+    }
+
+    .contenedorPortada {
+        margin: auto;
+        padding-top: 1%;
+        width: 70%;
+    }
+}
+
+    
