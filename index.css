@@ -344,7 +344,9 @@ main{
         width:14vw;
     }
 
-
+    .imgPaginas{
+       height:15vh;
+    }
     .contenedorIconosWhatsapp{
         display:flex;
         flex-direction:row;
