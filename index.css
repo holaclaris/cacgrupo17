@@ -310,7 +310,7 @@ main{
     transition: all .5s;
 }
 
-.card p, a {
+.card p, .card a {
     display: none;
 }
 
