@@ -139,6 +139,7 @@ header {
         transform:scale(1.2);
         color:#343336;
     }
+   
 
     .navBar ul{
         list-style: none;
@@ -429,6 +430,9 @@ main{
         position: relative;
         top: 0vh;
         width: 100%;
+    }
+    #barraOcultar{
+        width:95%;
     }
 
     .navBar .navList{
