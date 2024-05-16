@@ -1,4 +1,12 @@
+.main h1{
+  text-align: center;
+}
 
+#paquetes p br{
+  text-align: center;
+  padding; 20px;
+
+}
 .container {
   padding: 40px;
   display: grid;
@@ -19,6 +27,13 @@
     border-radius: 5px;
     margin-bottom: 10px;
 }
+
+
+.item p{
+  text-align: center;
+  position: relative;
+}
+
 
 
 
