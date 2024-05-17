@@ -186,10 +186,6 @@ header {
         padding: 7px;
         
     }
-    .contenedorPortada{
-        height:75vh;
-        overflow:hidden;
-    }
 
     .contenedorPortada img{
         object-fit: cover;
@@ -459,9 +455,7 @@ main{
         margin:auto;
         width:60%;
     }
-    .contenedorPortada img{
-        margin-top: -22vh;
-    }
+ 
     .contenedorPortada.paginas{
         display:none;
     }
