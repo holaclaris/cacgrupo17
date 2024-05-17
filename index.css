@@ -37,8 +37,8 @@ al presionar sobre un elemento. */
    }
 
 body{
-    background-color: #b9c3ca73;
-    color: #504e54;
+    background-color: #f1e1d5;
+    color: black;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
 }      
@@ -94,30 +94,28 @@ header {
     flex-direction: column;
     justify-content: space-around;
     position: relative;
-    border-top: 7px solid #8b7d76;
+    border-top: 7px solid #f7f7f5;
 }
 
     .contenedorTitulo{
+        filter: drop-shadow(2px 4px 2px white);
         position:relative;
         z-index: 2;
-        border-radius: 70px 13px;
-        padding: 30px;
         position:absolute;
-        background-color: #e9dabaa6;
-        left: 32vw;
+        left: 27vw;
         top: 2vh;
     }
 
         .contenedorTitulo h1{
-            color: rgb(11 11 12);
+            color: black;
             font-family: "Brittany", serif;
-            font-size: 2.5em;
+            font-size: 13vw;
         }
         .contenedorTitulo p {
-            font-size: 1.2em;
+            font-size: 4vw;
             font-variant: all-small-caps;
-            padding-left: 22px;
-            margin-top: -7px;
+            padding-left: 36px;
+            margin-top: -19px;
         }
 
     .navBar{
@@ -127,17 +125,16 @@ header {
     }
 
     #hamburguesa{
+        filter: drop-shadow(2px 4px 2px white);
         font-size: 2em;
         padding:10px;
         transition:all 0.2s;
     }
     #hamburguesa:hover{
         transform:scale(1.2);
-        color:#343336;
     }
     #hamburguesa:active{
         transform:scale(1.2);
-        color:#343336;
     }
    
 
@@ -160,17 +157,16 @@ header {
     }
     .navBar .navLinks li:hover{
         transform:scale(1.2);
-        color:#343336;
     }
     .navBar .navLinks li:active{
         transform:scale(1.2);
-        color:#343336;
     }
 
     .navBar ul a{
-        color: #504e54;
+        color: black;
+        filter: drop-shadow(2px 4px 2px white);
+        font-size: 3vw;
         text-decoration: none;
-        font-size: 1em;
     }
 
     .navBar ul li{
@@ -190,14 +186,21 @@ header {
         padding: 7px;
         
     }
+    .contenedorPortada{
+        height:75vh;
+        overflow:hidden;
+    }
 
     .contenedorPortada img{
         object-fit: cover;
         width:100%;
     }
+    .contenedorPortada.paginas{
+        display:none;
+    }
 
     #barraOcultar{
-        background-color: #eaebef;
+        background-color: #f1e1d5;
         display: none;
     }
 
@@ -392,15 +395,6 @@ main{
 
 /*Media Queries*/
 
-@media screen and (max-width:450px){
-   
-    .contenedorTitulo h1 {
-        font-size: 1.7em;
-    }
-    .contenedorTitulo p{
-        font-size:0.6em;
-    }
-}
 
 @media screen and (min-width:768px) {
     .banner{
@@ -411,25 +405,26 @@ main{
         right: 12vw;
     }
     .contenedorTitulo{
-        border-radius: 0;
-        padding: 5px;
-        position: initial;
         text-align: center;
         display: flex;
         flex-direction: row;
         align-items: baseline;
         justify-content: center;
+        position:relative;
+        left:0;
+        top:0;
     }
 
     .contenedorTitulo h1{
-        font-size: 3em;
+        font-size: 7vw;
+    }
+    .contenedorTitulo p{
+        font-size: 2.5vw;
     }
 
     #navBar {
-        padding: 0 5%;
-        position: relative;
-        top: 0vh;
-        width: 100%;
+        background-color: #f7f7f5a6;
+        position:relative;
     }
     #barraOcultar{
         width:95%;
@@ -438,6 +433,9 @@ main{
     .navBar .navList{
         justify-content: space-between;
         width:100%;
+    }
+    .navBar ul a{
+        font-size: 2vw;
     }
 
     .navBar .navLinks{
@@ -459,9 +457,14 @@ main{
         width:14vw;
     }
 
-    .imgPaginas{
-       height:15vh;
+    .contenedorPortada{
+        margin:auto;
+        width:60%;
     }
+    .contenedorPortada img{
+        margin-top: -22vh;
+    }
+
     .contenedorIconosWhatsapp{
         display:flex;
         flex-direction:row;
@@ -474,26 +477,26 @@ main{
         align-items: center;
     }
 
-    .contenedorPortada, main{
-        margin: auto;
-        width: 80%;
-    }
 }
 
-@media screen and (min-width: 1200px){
 
-    #navBar{
-        background-color: #eaebef99;
-    }
+
+@media screen and (min-width: 1200px){
     
+    .contenedorTitulo h1{
+        font-size: 5vw;
+    }
     .contenedorTitulo p {
+        font-size: 2vw;
         margin-top: -24px;
     }
+   
+    .navBar ul a{
+        font-size: 1.5vw;
+    }
 
-    .contenedorPortada {
-        margin: auto;
-        padding-top: 1%;
-        width: 70%;
+    .contenedorPortada{
+        width:60%;
     }
 }
 
