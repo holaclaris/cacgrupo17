@@ -13,7 +13,7 @@ const clickHamburguesa=(e)=>{
     navBar.style.top = "0vh";
     barraOcultar.style.display = "flex";
     barraOcultar.style.padding = "0px 20px";
-    contenedorTitulo.style.left ="60vw"
+    contenedorTitulo.style.left ="57vw"
 }
 
 const clickCruz=(e)=>{
