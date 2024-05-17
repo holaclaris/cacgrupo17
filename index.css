@@ -195,9 +195,7 @@ header {
         object-fit: cover;
         width:100%;
     }
-    .contenedorPortada.paginas{
-        display:none;
-    }
+   
 
     #barraOcultar{
         background-color: #f1e1d5;
@@ -463,6 +461,9 @@ main{
     }
     .contenedorPortada img{
         margin-top: -22vh;
+    }
+    .contenedorPortada.paginas{
+        display:none;
     }
 
     .contenedorIconosWhatsapp{
