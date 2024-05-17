@@ -98,6 +98,7 @@ header {
 }
 
     .contenedorTitulo{
+        padding:10px;
         position:relative;
         z-index: 2;
         position:absolute;
@@ -188,14 +189,18 @@ header {
         
     }
 
+    .contenedorPortada.paginas{
+        height: 35vh;
+        overflow: hidden;
+    }
+
     .contenedorPortada img{
         object-fit: cover;
         width:100%;
     }
-
-    .contenedorPortada.paginas{
-        height: 35vh;
-        overflow: hidden;
+    
+    .contenedorPortada.paginas img{
+        margin-top: -45px;
     }
 
     #barraOcultar{
