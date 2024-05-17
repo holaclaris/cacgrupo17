@@ -298,14 +298,13 @@ main{
         right: 12vw;
     }
     .contenedorTitulo{
-        background-image: url("../assets/images/fotomarfondo.jpg");
+        background-image: url(../assets/images/fotomar-apaisada.jpg);
         background-position: center;
         background-size: cover;
         text-align: center;
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        justify-content: center;
         position:relative;
         left:0;
         top:0;
