@@ -305,6 +305,7 @@ main{
         display: flex;
         flex-direction: row;
         align-items: baseline;
+        padding:20px;
         position:relative;
         left:0;
         top:0;
@@ -315,6 +316,7 @@ main{
     }
     .contenedorTitulo p{
         font-size: 2.5vw;
+        padding-left: 20px;
     }
 
     #navBar {
