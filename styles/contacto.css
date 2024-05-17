@@ -9,7 +9,7 @@
 }
 
 .titulo {
-    background-image: url(contacto-imagen.jpg);
+    background-image: url(../assets/images/contacto-imagen.jpg);
     background-size: cover;
     color: #fff;
     padding: 20px;
