@@ -1,7 +1,13 @@
-#paquetes h1{
+.main h1{
   text-align: center;
   padding: 20px;
 }
+#paquetes p br{
+  text-align: center;
+  padding; 20px;
+
+}
+
 
 .container {
   padding: 40px;
