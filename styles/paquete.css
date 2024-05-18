@@ -17,6 +17,7 @@ h1{
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   box-sizing: border-box;
+  width; 100%;
 }
 
 .item {
@@ -46,7 +47,7 @@ h1{
 
 
 .item img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
