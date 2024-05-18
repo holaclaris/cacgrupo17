@@ -28,7 +28,9 @@
     border-radius: 5px;
     margin-bottom: 10px;
 }
-
+.item p {
+  padding:20px
+}
 
 .btn-comprar,
 .btn-carrito {
