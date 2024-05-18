@@ -60,3 +60,30 @@
         grid-template-columns: 1fr;
     }
 }
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+    font-size: 2em;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    color: #ddd;
+    cursor: pointer;
+    font-size: 2em;
+    padding: 0;
+    transition: color 0.2s;
+}
+
+.star-rating input[type="radio"]:checked ~ label,
+.star-rating input[type="radio"]:checked ~ label ~ label {
+    color: gold;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: gold;
+}
