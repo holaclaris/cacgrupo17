@@ -1,11 +1,16 @@
 main h1{
-  padding:10px
+  padding:10px;
   font-size: 3em; 
   color: #333;
   text-align: center;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
-  
+main p{
+  padding:10px;
+  font-size: 2em; 
+  color: #333;
+  text-align: center;
+}
 
 .container {
   padding: 40px;
