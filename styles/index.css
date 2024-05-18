@@ -401,50 +401,12 @@ main{
 }
 
  
-.container {
-  padding: 40px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.item {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.item img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
 
 
 
 
 
-.btn-comprar,
-.btn-carrito {
-  display: block;
-  width: 100%;
-  padding: 10px 15px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-}
 
-.btn-comprar {
-  background-color: #007bff;
-  color: #fff;
-}
 
-.btn-carrito {
-  background-color: #28a745;
-  color: #fff;
-}
-   
+
+  
