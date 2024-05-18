@@ -22,10 +22,10 @@
 }
 
 
-.item h2{
+.item h2 p{
   text-align: center;
   padding:20px;
-  position: relative;
+
 }
   
 
@@ -48,16 +48,6 @@
     border-radius: 5px;
     margin-bottom: 10px;
 }
-
-
-.item p{
-  text-align: center;
-  position: relative;
-}
-
-
-
-
 
 
 .btn-comprar,
