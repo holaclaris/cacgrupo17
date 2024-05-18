@@ -21,6 +21,14 @@
   
 }
 
+
+.item h2{
+  text-align: center;
+  padding:20px;
+  position: relative;
+}
+  
+
 @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
@@ -40,12 +48,7 @@
     border-radius: 5px;
     margin-bottom: 10px;
 }
-.item h2{
-  text-align: center;
-  padding:20px;
-  position: relative;
-}
-  
+
 
 .item p{
   text-align: center;
