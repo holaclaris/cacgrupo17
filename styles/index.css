@@ -95,7 +95,7 @@ header {
 
 .contenedorTitulo p {
     filter: drop-shadow(2px 4px 2px white);
-    font-size: 2em;
+    font-size: 4vw;
     font-variant: all-small-caps;
     padding-left: 39px;
     margin-top: -19px;
@@ -109,7 +109,7 @@ header {
 
 #hamburguesa {
     filter: drop-shadow(2px 4px 2px white);
-    font-size: 4em;
+    font-size: 3em;
     padding: 10px;
     transition: all 0.2s;
 }
