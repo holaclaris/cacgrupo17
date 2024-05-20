@@ -313,6 +313,7 @@ main {
         background-image: url(../assets/images/fotomar-apaisada3.jpg);
         background-position: center;
         background-size: cover;
+        filter: drop-shadow(3px 2px 3px gray);
         text-align: center;
         align-items: flex-start;
         padding: 25px 20px;
