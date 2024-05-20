@@ -1,5 +1,4 @@
-//Funciones para que al clickear el menu hamburguesa se vea el menu (barraOcultar)
-//Y al clickear la cruz se cierre
+//Codigo para que al clickear el menu hamburguesa se vea el menu (barraOcultar)
 
 const hamburguesa= document.getElementById('hamburguesa');
 const cruz = document.getElementById('cruz');
@@ -17,6 +16,8 @@ const clickHamburguesa=(e)=>{
     contenedorTitulo.style.top="0";
     contenedorTitulo.style.scale="0.6";
 }
+
+//Y al clickear la cruz se cierre el menu desplegable
 
 const clickCruz=(e)=>{
     hamburguesa.style.display="";
