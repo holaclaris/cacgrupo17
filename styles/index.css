@@ -300,8 +300,8 @@ main {
     }
 
     .banner .contenedorWhatsapp {
-        top: 8vh;
-        right: 3vw;
+        top: 12vh;
+        right: 5vw;
         filter: drop-shadow(2px 4px 4px white);
     }
 
