@@ -1,28 +1,3 @@
-/* 1)Estilos generales:resetear margin y padding ya que los navegadores pueden
-tener distintos por defecto y genera inconsistencias.
-   2)box-sizing: border-box; simplifica el maquetado considerando las dimensiones
-   de los elementos desde su borde.
-
-   *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family //opcional poner aca
-   }
-
-   Navbar - resetear el estilo de la ul para que no se vean las viñetas con
-            list-style=none;
-   Eliminar estilo de enlaces con 
-   
-   a{
-    text-decoration:none;
-   }
-
-   
-Siempre colocar hover y active juntos, ya que en los celulares 
-el hover no tiene efecto dado que no hay cursor, pero si el active 
-al presionar sobre un elemento. */
-
 
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
@@ -105,7 +80,7 @@ header {
     position: relative;
     z-index: 2;
     position: absolute;
-    left: 21vw;
+    left: 25vw;
     top: 3vh;
 }
 
@@ -120,7 +95,7 @@ header {
 
 .contenedorTitulo p {
     filter: drop-shadow(2px 4px 2px white);
-    font-size: 4vw;
+    font-size: 2em;
     font-variant: all-small-caps;
     padding-left: 39px;
     margin-top: -19px;
@@ -134,7 +109,7 @@ header {
 
 #hamburguesa {
     filter: drop-shadow(2px 4px 2px white);
-    font-size: 2em;
+    font-size: 4em;
     padding: 10px;
     transition: all 0.2s;
 }
@@ -177,7 +152,7 @@ header {
 .navBar ul a {
     color: black;
     filter: drop-shadow(2px 4px 2px white);
-    font-size: 3vw;
+    font-size: 1.5em;
     text-decoration: none;
 }
 
@@ -320,14 +295,13 @@ main {
 
 /*Media Queries*/
 
-
 @media screen and (min-width:768px) {
     .banner {
         padding: 0 10%;
     }
 
     .banner .contenedorWhatsapp {
-        top: 9vh;
+        top: 11vh;
         right: 9vw;
         filter: drop-shadow(2px 2px 2px white);
     }
@@ -421,6 +395,10 @@ main {
     .presentacion {
         width: 70%;
     }
+    #carouselExampleCaptions{
+        width: 80%;
+        margin: auto;
+    }
 
 }
 
@@ -444,6 +422,10 @@ main {
     .contenedorPortada {
         width: 60%;
     }
+    #carouselExampleCaptions{
+        width: 70%;
+    }
+
 }
 
   
