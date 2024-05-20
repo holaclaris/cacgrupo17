@@ -98,12 +98,14 @@ header {
 }
 
     .contenedorTitulo{
-        padding:10px;
+        display:flex;
+        flex-direction: column;
+        padding:20px;
         position:relative;
         z-index: 2;
         position:absolute;
-        left: 27vw;
-        top: 2vh;
+        left: 21vw;
+        top: 3vh;
     }
 
         .contenedorTitulo h1{
@@ -111,6 +113,8 @@ header {
             filter: drop-shadow(2px 4px 2px white);
             font-family: "Brittany", serif;
             font-size: 13vw;
+            font-weight: 600;
+            padding:15px;
         }
         .contenedorTitulo p {
             filter: drop-shadow(2px 4px 2px white);
@@ -306,14 +310,12 @@ main{
         right: 12vw;
     }
     .contenedorTitulo{
-        background-image: url(../assets/images/fotomar-apaisada.jpg);
+        background-image: url(../assets/images/fotomar-apaisada3.jpg);
         background-position: center;
         background-size: cover;
         text-align: center;
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        padding:20px;
+        align-items: flex-start;
+        padding: 25px 20px;
         position:relative;
         left:0;
         top:0;
@@ -321,10 +323,11 @@ main{
 
     .contenedorTitulo h1{
         font-size: 7vw;
+        padding-left:30px;
     }
     .contenedorTitulo p{
         font-size: 2.5vw;
-        padding-left: 20px;
+        padding-left: 50px;
     }
 
     #navBar {
@@ -365,9 +368,7 @@ main{
     }
 
     .contenedorPortada{
-       displey:none;
-        margin:auto;
-        width:60%;
+        display:none;
     }
  
     .contenedorPortada.paginas{
