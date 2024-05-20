@@ -100,7 +100,6 @@ header {
     .contenedorTitulo{
         display:flex;
         flex-direction: column;
-        padding:20px;
         position:relative;
         z-index: 2;
         position:absolute;
@@ -306,8 +305,13 @@ main{
         padding: 0 10%;
     }
     .banner .contenedorWhatsapp{
-        top: 8vh;
-        right: 12vw;
+        top: 9vh;
+        right: 9vw;
+        filter:drop-shadow(2px 2px 2px white);
+    }
+
+    .banner .fa-brands.fa-whatsapp{
+        color:rgb(16, 16, 16);
     }
     .contenedorTitulo{
         background-image: url(../assets/images/fotomar-apaisada3.jpg);
