@@ -25,6 +25,7 @@ al presionar sobre un elemento. */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 @font-face {
     font-family: "Brittany";
     src: url(../assets/fonts/BrittanySignature.ttf);
@@ -34,16 +35,16 @@ al presionar sobre un elemento. */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   }
+}
 
-body{
+body {
     background-color: #f1e1d5;
     color: black;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-}      
+}
 
-.banner{
+.banner {
     display: flex;
     background-color: black;
     text-align: center;
@@ -55,7 +56,7 @@ body{
     padding: 15px;
 }
 
-.banner .contenedorWhatsapp{
+.banner .contenedorWhatsapp {
     position: fixed;
     top: 1vh;
     right: 4vw;
@@ -63,31 +64,32 @@ body{
     filter: drop-shadow(2px 4px 6px black);
 }
 
-    .banner .fa-brands.fa-whatsapp{
-        color:white;
-        font-size: 3em;
-        transition:all 0.1s;
-    }
+.banner .fa-brands.fa-whatsapp {
+    color: white;
+    font-size: 3em;
+    transition: all 0.1s;
+}
 
-    .banner .fa-brands.fa-whatsapp:hover{
-        transform:scale(1.2)
-    }
-    .banner .fa-brands.fa-whatsapp:active{
-        transform:scale(1.2)
-    }
+.banner .fa-brands.fa-whatsapp:hover {
+    transform: scale(1.2)
+}
 
-    .banner p {
-        color: white;
-        font-size: 0.8em;
-        margin: 0;
-        padding: 5px;
-        width:80vw;
-        
-    }
+.banner .fa-brands.fa-whatsapp:active {
+    transform: scale(1.2)
+}
 
-    .banner .contenedorWhatsapp a{
-        text-decoration: none;
-    }
+.banner p {
+    color: white;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 5px;
+    width: 80vw;
+
+}
+
+.banner .contenedorWhatsapp a {
+    text-decoration: none;
+}
 
 header {
     display: flex;
@@ -97,195 +99,214 @@ header {
     border-top: 7px solid #f7f7f5;
 }
 
-    .contenedorTitulo{
-        display:flex;
-        flex-direction: column;
-        position:relative;
-        z-index: 2;
-        position:absolute;
-        left: 21vw;
-        top: 3vh;
-    }
+.contenedorTitulo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    position: absolute;
+    left: 21vw;
+    top: 3vh;
+}
 
-        .contenedorTitulo h1{
-            color: black;
-            filter: drop-shadow(2px 4px 2px white);
-            font-family: "Brittany", serif;
-            font-size: 13vw;
-            font-weight: 600;
-            padding:15px;
-        }
-        .contenedorTitulo p {
-            filter: drop-shadow(2px 4px 2px white);
-            font-size: 4vw;
-            font-variant: all-small-caps;
-            padding-left: 39px;
-            margin-top: -19px;
-        }
-
-    .navBar{
-        position: absolute;
-        top:1vh;
-        width: 100%;       
-    }
-
-    #hamburguesa{
-        filter: drop-shadow(2px 4px 2px white);
-        font-size: 2em;
-        padding:10px;
-        transition:all 0.2s;
-    }
-    #hamburguesa:hover{
-        transform:scale(1.2);
-    }
-    #hamburguesa:active{
-        transform:scale(1.2);
-    }
-   
-
-    .navBar ul{
-        list-style: none;
-        padding:10px 0;
-    }
-
-    #cruz{
-        display:none;
-    }
-
-    .navBar .navLinks{
-        display:flex;
-        flex-direction: column;
-    }
-
-    .navBar .navLinks li{
-        transition:all 0.2s
-    }
-    .navBar .navLinks li:hover{
-        transform:scale(1.2);
-    }
-    .navBar .navLinks li:active{
-        transform:scale(1.2);
-    }
-
-    .navBar ul a{
-        color: black;
-        filter: drop-shadow(2px 4px 2px white);
-        font-size: 3vw;
-        text-decoration: none;
-    }
-
-    .navBar ul li{
-        padding:10px;
-    }
-
-    .contenedorLupaCarrito{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    #busqueda{
-        border: none;
-        border-radius: 4px;
-        margin-left:5px;
-        padding: 7px;
-        
-    }
-
-    .contenedorPortada.paginas{
-        height: 35vh;
-        overflow: hidden;
-    }
-
-    .contenedorPortada img{
-        object-fit: cover;
-        width:100%;
-    }
-    
-    .contenedorPortada.paginas img{
-        margin-top: -45px;
-    }
-
-    #barraOcultar{
-        background-color: #f1e1d5;
-        display: none;
-    }
-
-main{
+.contenedorTitulo h1 {
+    color: black;
+    filter: drop-shadow(2px 4px 2px white);
+    font-family: "Brittany", serif;
+    font-size: 13vw;
+    font-weight: 600;
     padding: 15px;
 }
-    
-.contenedorFooter{
+
+.contenedorTitulo p {
+    filter: drop-shadow(2px 4px 2px white);
+    font-size: 4vw;
+    font-variant: all-small-caps;
+    padding-left: 39px;
+    margin-top: -19px;
+}
+
+.navBar {
+    position: absolute;
+    top: 1vh;
+    width: 100%;
+}
+
+#hamburguesa {
+    filter: drop-shadow(2px 4px 2px white);
+    font-size: 2em;
+    padding: 10px;
+    transition: all 0.2s;
+}
+
+#hamburguesa:hover {
+    transform: scale(1.2);
+}
+
+#hamburguesa:active {
+    transform: scale(1.2);
+}
+
+
+.navBar ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+#cruz {
+    display: none;
+}
+
+.navBar .navLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.navBar .navLinks li {
+    transition: all 0.2s
+}
+
+.navBar .navLinks li:hover {
+    transform: scale(1.2);
+}
+
+.navBar .navLinks li:active {
+    transform: scale(1.2);
+}
+
+.navBar ul a {
+    color: black;
+    filter: drop-shadow(2px 4px 2px white);
+    font-size: 3vw;
+    text-decoration: none;
+}
+
+.navBar ul li {
+    padding: 10px;
+}
+
+.contenedorLupaCarrito {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#busqueda {
+    border: none;
+    border-radius: 4px;
+    margin-left: 5px;
+    padding: 7px;
+
+}
+
+.contenedorPortada.paginas {
+    height: 35vh;
+    overflow: hidden;
+}
+
+.contenedorPortada img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.contenedorPortada.paginas img {
+    margin-top: -45px;
+}
+
+#barraOcultar {
+    background-color: #f1e1d5;
+    display: none;
+}
+
+main {
+    padding: 15px;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    margin: auto;
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.contenedorFooter {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid #504e54;
-    padding:20px 0;
+    border-top: 1px solid black;
+    padding: 20px 0;
 }
 
 
-.contenedorIconosWhatsapp{
-    display:flex;
-    flex-direction:column;
+.contenedorIconosWhatsapp {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .contenedorFooter .contenedorWhatsapp {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     padding: 20px;
-    transition:all 0.1s;
+    transition: all 0.1s;
 }
 
 .contenedorFooter .contenedorWhatsapp:hover {
-    transform:scale(1.2);
-    color:#343336;
+    transform: scale(1.2);
+    color: #343336;
 }
+
 .contenedorFooter .contenedorWhatsapp:active {
-    transform:scale(1.2);
-    color:#343336;
+    transform: scale(1.2);
+    color: #343336;
 }
 
 
 
-.contenedorFooter .contenedorWhatsapp a{
-    color:#504e54;
-    display:flex;
+.contenedorFooter .contenedorWhatsapp a {
+    color: black;
+    display: flex;
     text-decoration: none;
     text-decoration: none;
 }
 
-.contenedorFooter .contenedorWhatsapp a i{
-    font-size: 2em;   
+.contenedorFooter .contenedorWhatsapp a i {
+    font-size: 2em;
     padding: 5px;
 }
-.contenedorFooter .contenedorWhatsapp p{
+
+.contenedorFooter .contenedorWhatsapp p {
     font-size: 1em;
     margin-bottom: 0;
-    position:relative;
-    top:11px;
+    position: relative;
+    top: 11px;
 }
 
-.contenedorFooter .contenedorIconos a{
- padding:0 5px;
+.contenedorFooter .contenedorIconos a {
+    padding: 0 5px;
 }
 
-.contenedorIconos i{
-    color:#504e54;
+.contenedorIconos i {
+    color: black;
     font-size: 1.5em;
     transition: all 0.1s;
 }
 
-.contenedorIconos i:hover{
-    transform:scale(1.2);
-    color:#343336;
+.contenedorIconos i:hover {
+    transform: scale(1.2);
+    color: #343336;
 }
-.contenedorIconos i:active{
-    transform:scale(1.2);
-    color:#343336;
+
+.contenedorIconos i:active {
+    transform: scale(1.2);
+    color: #343336;
 }
 
 .carousel-item img {
@@ -301,126 +322,128 @@ main{
 
 
 @media screen and (min-width:768px) {
-    .banner{
+    .banner {
         padding: 0 10%;
     }
-    .banner .contenedorWhatsapp{
+
+    .banner .contenedorWhatsapp {
         top: 9vh;
         right: 9vw;
-        filter:drop-shadow(2px 2px 2px white);
+        filter: drop-shadow(2px 2px 2px white);
     }
 
-    .banner .fa-brands.fa-whatsapp{
-        color:rgb(16, 16, 16);
+    .banner .fa-brands.fa-whatsapp {
+        color: rgb(16, 16, 16);
     }
-    .contenedorTitulo{
+
+    .contenedorTitulo {
         background-image: url(../assets/images/fotomar-apaisada3.jpg);
         background-position: center;
         background-size: cover;
         text-align: center;
         align-items: flex-start;
         padding: 25px 20px;
-        position:relative;
-        left:0;
-        top:0;
+        position: relative;
+        left: 0;
+        top: 0;
     }
 
-    .contenedorTitulo h1{
+    .contenedorTitulo h1 {
         font-size: 7vw;
-        padding-left:30px;
+        padding-left: 30px;
     }
-    .contenedorTitulo p{
+
+    .contenedorTitulo p {
         font-size: 2.5vw;
         padding-left: 50px;
     }
 
     #navBar {
-        position:relative;
+        position: relative;
         padding-bottom: 15px;
         width: 90%;
         margin: auto;
     }
-    #barraOcultar{
-        width:95%;
+
+    #barraOcultar {
+        width: 95%;
     }
 
-    .navBar .navList{
+    .navBar .navList {
         justify-content: space-between;
-        width:100%;
+        width: 100%;
     }
-    .navBar ul a{
+
+    .navBar ul a {
         font-size: 2vw;
     }
 
-    .navBar .navLinks{
-        display:flex;
+    .navBar .navLinks {
+        display: flex;
         flex-direction: row;
     }
 
-    #barraOcultar{
+    #barraOcultar {
         background-color: #eaebef00;
         display: flex;
-        padding:0;
+        padding: 0;
     }
 
-    #cruz, #hamburguesa{
-        display:none;
+    #cruz,
+    #hamburguesa {
+        display: none;
     }
 
-    #busqueda{
-        width:14vw;
+    #busqueda {
+        width: 14vw;
     }
 
-    .contenedorPortada{
-        display:none;
-    }
- 
-    .contenedorPortada.paginas{
-        display:none;
+    .contenedorPortada {
+        display: none;
     }
 
-    .contenedorIconosWhatsapp{
-        display:flex;
-        flex-direction:row;
+    .contenedorPortada.paginas {
+        display: none;
+    }
+
+    .contenedorIconosWhatsapp {
+        display: flex;
+        flex-direction: row;
         align-items: center;
     }
-   
 
-    .navList{
-        display:flex;
+
+    .navList {
+        display: flex;
         align-items: center;
+    }
+
+    .presentacion {
+        width: 70%;
     }
 
 }
 
 
 
-@media screen and (min-width: 1200px){
-    
-    .contenedorTitulo h1{
+@media screen and (min-width: 1200px) {
+
+    .contenedorTitulo h1 {
         font-size: 5vw;
     }
+
     .contenedorTitulo p {
         font-size: 2vw;
         margin-top: -24px;
     }
-   
-    .navBar ul a{
+
+    .navBar ul a {
         font-size: 1.5vw;
     }
 
-    .contenedorPortada{
-        width:60%;
+    .contenedorPortada {
+        width: 60%;
     }
 }
-
- 
-
-
-
-
-
-
-
 
   

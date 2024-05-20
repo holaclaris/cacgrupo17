@@ -1,20 +1,31 @@
-main h1{
-  padding:10px;
-  font-size: 3em; 
+main h1 {
+  padding: 10px;
+  font-size: 2.5em;
   color: #333;
   text-align: center;
   font-variant: all-small-caps;
 
 }
-main p{
-  padding:10px;
-  font-size: 2em; 
+
+/* main p {
+  padding: 10px;
+  font-size: 1.3em;
   color: #333;
   text-align: center;
+} */
+
+.presentacion{
+  color: #333;
+  font-size: 1.3em;
+  margin:auto;
+  padding:40px;
+  width:100%;
+  text-align: center;
 }
+  
 
 .container {
-  padding: 40px;
+  padding: 40px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -32,37 +43,34 @@ main p{
   flex-direction: column;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-}
-.item: hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+
 }
 
-
-
-
-
-
-.item img{
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding:10px;
-    aspect-ratio: 2/1;
-    object-fit:cover;
+.item:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
-.item h2{
-  padding:10px;
-  font-size: 2.5em; 
+
+.item img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  aspect-ratio: 2/1;
+  object-fit: cover;
+}
+
+.item h2 {
+  padding: 10px;
+  font-size: 1.5em;
   color: #333;
   text-align: center;
-  
+
 }
 
 
-.item p{
-  padding:20px
+.item p {
+  padding: 20px
 }
 
 .btn-comprar,
@@ -89,34 +97,41 @@ main p{
 
 
 @media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
+  .container {
+    grid-template-columns: 1fr;
+  }
 }
+
 .star-rating {
-    direction: rtl;
-    display: inline-block;
-    font-size: 2em;
+  direction: rtl;
+  display: inline-block;
+  font-size: 2em;
 }
 
 .star-rating input[type="radio"] {
-    display: none;
+  display: none;
 }
 
 .star-rating label {
-    color: #ddd;
-    cursor: pointer;
-    font-size: 2em;
-    padding: 0;
-    transition: color 0.2s;
+  color: #ddd;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 0;
+  transition: color 0.2s;
 }
 
-.star-rating input[type="radio"]:checked ~ label,
-.star-rating input[type="radio"]:checked ~ label ~ label {
-    color: gold;
+.star-rating input[type="radio"]:checked~label,
+.star-rating input[type="radio"]:checked~label~label {
+  color: gold;
 }
 
 .star-rating label:hover,
-.star-rating label:hover ~ label {
-    color: gold;
+.star-rating label:hover~label {
+  color: gold;
+}
+
+@media (min-width: 768px) {
+  .presentacion {
+    width: 70%;
+  }
 }
