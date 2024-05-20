@@ -285,6 +285,14 @@ main{
     color:#343336;
 }
 
+.carousel-item img {
+    width: 100%;
+    max-width: 1300px;
+    aspect-ratio: 2/1;
+    max-height: 700px;
+    object-fit: cover;
+    margin: 0 auto;
+}
 
 /*Media Queries*/
 
@@ -357,6 +365,7 @@ main{
     }
 
     .contenedorPortada{
+       displey:none;
         margin:auto;
         width:60%;
     }
