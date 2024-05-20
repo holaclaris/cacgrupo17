@@ -13,7 +13,9 @@ const clickHamburguesa=(e)=>{
     navBar.style.top = "0vh";
     barraOcultar.style.display = "flex";
     barraOcultar.style.padding = "0px 20px";
-    contenedorTitulo.style.left ="55vw"
+    contenedorTitulo.style.left ="55vw";
+    contenedorTitulo.style.top="0";
+    contenedorTitulo.style.scale="0.6";
 }
 
 const clickCruz=(e)=>{
@@ -22,6 +24,8 @@ const clickCruz=(e)=>{
     navBar.style.top = "1vh";
     barraOcultar.style.display = "";
     contenedorTitulo.style.left = "";
+    contenedorTitulo.style.top= "";
+    contenedorTitulo.style.scale= "";
 }
 
 
