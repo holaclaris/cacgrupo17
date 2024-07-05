@@ -22,7 +22,7 @@ body {
     display: flex;
     background-color: black;
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     align-content: center;
     flex-direction: row;
@@ -40,24 +40,24 @@ body {
 
 .banner .fa-brands.fa-whatsapp {
     color: white;
-    font-size: 3em;
-    transition: all 0.1s;
+    font-size: 2.5em;
+    transition: all 0.2s;
 }
 
 .banner .fa-brands.fa-whatsapp:hover {
-    transform: scale(1.2)
+    transform: scale(1.1)
 }
 
 .banner .fa-brands.fa-whatsapp:active {
-    transform: scale(1.2)
+    transform: scale(1.1)
 }
 
 .banner p {
     color: white;
     font-size: 0.8em;
     margin: 0;
-    padding: 5px;
-    width: 80vw;
+    padding: 0 10px;
+    width:80%;
 
 }
 
@@ -79,22 +79,23 @@ header {
     position: relative;
     z-index: 2;
     position: absolute;
-    left: 25vw;
-    top: 3vh;
+    left: 30%;
+    top: 20px;
 }
 
 .contenedorTitulo h1 {
     color: black;
     filter: drop-shadow(2px 4px 2px white);
     font-family: "Brittany", serif;
-    font-size: 13vw;
+    font-size: 3em;
     font-weight: 600;
-    padding: 15px;
+    padding:10px 0;
 }
 
 .contenedorTitulo p {
     filter: drop-shadow(2px 4px 2px white);
-    font-size: 4vw;
+    font-size: 1.2em;
+    font-style:italic;
     font-variant: all-small-caps;
     padding-left: 39px;
     margin-top: -19px;
@@ -108,27 +109,26 @@ header {
 
 #hamburguesa {
     filter: drop-shadow(2px 4px 2px white);
-    font-size: 3em;
+    font-size: 2.5em;
     padding: 10px;
     transition: all 0.2s;
 }
 
 #hamburguesa:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 #hamburguesa:active {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
-
 
 .navBar ul {
     list-style: none;
-    padding: 10px 0;
 }
 
 #cruz {
     display: none;
+    padding:10px;
 }
 
 .navBar .navLinks {
@@ -137,75 +137,68 @@ header {
 }
 
 .navBar .navLinks li {
+    padding: 10px;
     transition: all 0.2s
 }
 
 .navBar .navLinks li:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .navBar .navLinks li:active {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .navBar ul a {
     color: black;
     filter: drop-shadow(2px 4px 2px white);
-    font-size: 1.5em;
+    font-size: 1.2em;
+    padding: 10px;
     text-decoration: none;
 }
 
-.navBar ul li {
-    padding: 10px;
+ul.navList.navLinks{
+    padding-left:0;
 }
 
-.contenedorLupaCarrito {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
-#busqueda {
-    border: none;
-    border-radius: 4px;
-    margin-left: 5px;
-    padding: 7px;
-
-}
-
-.contenedorPortada.paginas {
-    height: 35vh;
+.contenedorPortada{
     overflow: hidden;
+}
+.contenedorPortada.paginas {
+    height: 30vh;
 }
 
 .contenedorPortada img {
     object-fit: cover;
     width: 100%;
+    margin-top:-50px;
 }
-
-.contenedorPortada.paginas img {
-    margin-top: -45px;
+.contenedorPortada.paginas img{
+    margin-top:-65px;
 }
 
 #barraOcultar {
     background-color: #f1e1d5;
     display: none;
 }
+main{
+    padding:15px;
+}
 
-main {
-    padding: 15px;
+main#inicio {
+    padding: 15px 0;
 }
 
 .presentacion {
     display: flex;
     flex-direction: column;
-    font-size: 1.3em;
+    font-size: 1em;
     margin: auto;
     padding: 20px;
     width: 100%;
     text-align: center;
 }
-
 
 .contenedorFooter {
     display: flex;
@@ -215,7 +208,6 @@ main {
     border-top: 1px solid black;
     padding: 20px 0;
 }
-
 
 .contenedorIconosWhatsapp {
     display: flex;
@@ -233,16 +225,14 @@ main {
 }
 
 .contenedorFooter .contenedorWhatsapp:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: #343336;
 }
 
 .contenedorFooter .contenedorWhatsapp:active {
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: #343336;
 }
-
-
 
 .contenedorFooter .contenedorWhatsapp a {
     color: black;
@@ -270,16 +260,16 @@ main {
 .contenedorIconos i {
     color: black;
     font-size: 1.5em;
-    transition: all 0.1s;
+    transition: all 0.2s;
 }
 
 .contenedorIconos i:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: #343336;
 }
 
 .contenedorIconos i:active {
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: #343336;
 }
 
@@ -294,15 +284,14 @@ main {
 
 /*Media Queries*/
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:576px) {
     .banner {
         padding: 0 10%;
     }
 
     .banner .contenedorWhatsapp {
-        top: 12vh;
-        right: 5vw;
-        filter: drop-shadow(2px 4px 4px white);
+        top: 50px;
+        filter: none;
     }
 
     .banner .fa-brands.fa-whatsapp {
@@ -310,51 +299,51 @@ main {
     }
 
     .contenedorTitulo {
-        background-image: url(../assets/images/fotomar-apaisada3.jpg);
-        background-position: center;
-        background-size: cover;
-        filter: drop-shadow(3px 2px 3px gray);
-        text-align: center;
-        align-items: flex-start;
-        padding: 25px 20px;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
         position: relative;
         left: 0;
         top: 0;
     }
 
     .contenedorTitulo h1 {
-        font-size: 7vw;
-        padding-left: 30px;
+        padding: 15px;
+
     }
 
     .contenedorTitulo p {
-        font-size: 2.5vw;
-        padding-left: 50px;
+        padding-left: 0;
+        margin-top:0;
     }
 
     #navBar {
+        background-color: #eeedeb85;
         position: relative;
-        padding-bottom: 15px;
-        width: 90%;
+        top:0;
         margin: auto;
     }
 
-    #barraOcultar {
-        width: 95%;
-    }
-
     .navBar .navList {
-        justify-content: space-between;
+        justify-content: center;
         width: 100%;
     }
 
     .navBar ul a {
-        font-size: 2vw;
+        font-size: 1em;
     }
+
 
     .navBar .navLinks {
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+
+    .navBar ul li {
+        padding: 0 25px;
     }
 
     #barraOcultar {
@@ -368,16 +357,18 @@ main {
         display: none;
     }
 
-    #busqueda {
-        width: 14vw;
-    }
 
-    .contenedorPortada {
-        display: none;
+    .contenedorPortada{
+        width:100%;
+        margin: auto;
+        margin-top:10px;
     }
-
-    .contenedorPortada.paginas {
-        display: none;
+    .contenedorPortada img{
+        height:50vh;
+        margin-top: 0;
+    }
+    .contenedorPortada.paginas{
+        display:none;
     }
 
     .contenedorIconosWhatsapp {
@@ -393,35 +384,32 @@ main {
     }
 
     .presentacion {
-        width: 70%;
+        width: 80%;
     }
 
-    #carouselExampleCaptions {
-        width: 80%;
-        margin: auto;
+}
+
+@media screen and (min-width: 768px){
+    .navList.navLinks{
+        justify-content: space-evenly;
+        width:80%;
     }
+    .contenedorPortada, .presentacion, #carouselExampleCaptions{
+        width: 80%;
+        margin:auto;
+    }
+    .contenedorPortada{
+        margin-top:20px;
+    }
+    .presentacion{
+        padding: 35px 20px;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
 
-    .contenedorTitulo h1 {
-        font-size: 5vw;
-    }
-
-    .contenedorTitulo p {
-        font-size: 2vw;
-        margin-top: -24px;
-    }
-
-    .navBar ul a {
-        font-size: 1.5vw;
-    }
-
-    .contenedorPortada {
-        width: 60%;
-    }
-
-    #carouselExampleCaptions {
-        width: 70%;
+    .contenedorPortada, .presentacion, #carouselExampleCaptions{
+        width: 70%
     }
 }
